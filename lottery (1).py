@@ -59,7 +59,7 @@ def display_status():
 def register_user():
     global end_time
     while datetime.now() < end_time:
-        username = input("Enter full name (Alphanumeric): ").strip()
+        username = input("Enter full name: ").strip()
         formatted_username = " ".join(word.capitalize() for word in username.split())
         
         if not username:
